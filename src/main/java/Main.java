@@ -43,6 +43,7 @@ public class Main {
         purchasedPerfomance.forEach(System.out::println);
     }
 
+    //Изменить форму вывода
     private static void printMostPopularPerformances(TheatreService theatreService, List<TicketCount> ticketsCount) {
         List<PerfomanceName> mostPopularPerformances = theatreService.getMostPopularPerfomance(
                 ticketsCount.stream().map(TicketCount::getCount).collect(Collectors.toList())
